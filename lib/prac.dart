@@ -1,33 +1,23 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class TextWidgetsDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Day 1 - Text Widgets',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Text Widgets"),
+        backgroundColor: Colors.black,
       ),
-      home: const TextWidgetsDemo(),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          
+        )
+        
+        
+        ),
+
+
     );
   }
-}
-
-class TextWidgetsDemo extends StatelessWidget {
-  const TextWidgetsDemo({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    
-  }
-    
-  
 }
