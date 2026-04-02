@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets_masterclass/visual_widgets/visual_widgets.dart';
 import 'text_widgets/text_widget.dart';
+import 'box_widgets/box_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const VisualWidgetsDemo(),
+      home: const BoxWidgetsDemo(),
     );
   }
 }
